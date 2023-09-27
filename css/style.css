@@ -192,10 +192,10 @@ display: flex;
 	grid-template-columns: 1fr 1fr;	
 	width: 90%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
-	border-radius: 20px;
+	border-radius: 1.25em;
 }
 
 .statement-form .contact-form form  {
@@ -203,10 +203,10 @@ display: flex;
 	grid-template-columns: 1fr 1fr;	
 	width: 90%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
-	border-radius: 20px;
+	border-radius: 1.25em;
 }
 
 .reservation-form .contact-form form  {
@@ -214,10 +214,10 @@ display: flex;
 	grid-template-columns: 1fr 1fr;	
 	width: 90%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
-	border-radius: 20px;
+	border-radius: 1.25em;
 }
 
 .contact-form form p{
@@ -235,7 +235,7 @@ display: flex;
 	border: none;
 	background: none;
 	outline: 0;
-	border-bottom: 1px solid #d63031;
+	border-bottom: 0.06em solid #d63031;
 }
 
 .renter-form .contact-form form input{
@@ -244,13 +244,13 @@ display: flex;
 	border: none;
 	background: none;
 	outline: 0;
-	border-bottom: 1px solid #d63031;
+	border-bottom: 0.06em solid #d63031;
 }
 
 .documents-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -259,7 +259,7 @@ display: flex;
 .penalties-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -268,7 +268,7 @@ display: flex;
 .statement-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -277,7 +277,25 @@ display: flex;
 .reservation-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.registration-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.renter-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -286,7 +304,7 @@ display: flex;
 .documents-form .contact-form form select {
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -295,7 +313,7 @@ display: flex;
 .penalties-form .contact-form form select {
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -304,7 +322,7 @@ display: flex;
 .reservation-form .contact-form form select {
 	width: 100%;
 	padding: 0.4em;
-	font-size: 14px;
+	font-size: 0.87em;
 	background: none;
 	outline: 0;
 	border-radius: 0.6em;
@@ -346,6 +364,7 @@ display: flex;
 .search-button input#boton:hover {
 	background-color: #515A5A;
 }
+
 
 
 input#boton1 {
@@ -391,10 +410,13 @@ input#boton2:hover {
     box-shadow: 0 0 0.18em rgba(0, 0, 0, 0.9);
     max-width: fit-content;
     max-height: fit-content;
-	;
-
-    
 }
+
+.statement-form .outer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 .table-wrapper {
 	overflow-y:scroll;
     overflow-x:scroll;
@@ -450,6 +472,14 @@ table td {
 	text-decoration: none;
 	border-radius: 0.4em;
 	box-shadow: 0.3em 0.3em 0.4em #043555;
+}
+
+textarea {
+	border: 0.12em solid black;
+	resize: none;
+	width: 100%;
+	border-radius: 0.6em;
+	resize: none;
 }
 
 
