@@ -19,6 +19,10 @@ body {
 
 body#index {
 	background-image: url("../img/Conjunto_Residencial.jpg");
+	max-width: 100%;
+	max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 
@@ -45,7 +49,7 @@ div {
 	
 }
 .cabeza div{
-	width: 50%;
+	width: 100%;
 }
 
 .cabeza:hover {
@@ -55,8 +59,8 @@ div {
 .codigo {
 	justify-items: center;
 display: flex;
-    margin: 0.5em 1em;
-    font-size: 150%;
+    margin: 0.2em 1em;
+	font-size: 150%;
     color: #fff;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -69,8 +73,8 @@ display: flex;
   }
 
 .Iconos img {
-	width: 2em;
-	height: 2em;
+	width: 30%;
+	height: 30%;
 	margin: 2em;
 }
   
@@ -194,6 +198,17 @@ display: flex;
 	border-radius: 20px;
 }
 
+.statement-form .contact-form form  {
+	display: grid;
+	grid-template-columns: 1fr 1fr;	
+	width: 90%;
+	padding: 0.4em;
+	font-size: 14px;
+	background: none;
+	outline: 0;
+	border-radius: 20px;
+}
+
 .reservation-form .contact-form form  {
 	display: grid;
 	grid-template-columns: 1fr 1fr;	
@@ -242,6 +257,15 @@ display: flex;
 }
 
 .penalties-form .contact-form form input{
+	width: 100%;
+	padding: 0.4em;
+	font-size: 14px;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.statement-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
 	font-size: 14px;
@@ -324,7 +348,6 @@ display: flex;
 }
 
 
-
 input#boton1 {
 	width: 6em;
 	padding: 0.5em 1em;
@@ -360,14 +383,15 @@ input#boton2:hover {
 /*Estilos tablas*/
 .outer-wrapper {
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 100px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+	margin-bottom: 6.25em;
     border: 0.06em solid black;
     border-radius: 0.25em;
     box-shadow: 0 0 0.18em rgba(0, 0, 0, 0.9);
     max-width: fit-content;
     max-height: fit-content;
+	;
 
     
 }
