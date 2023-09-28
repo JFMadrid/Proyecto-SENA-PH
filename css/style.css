@@ -57,10 +57,10 @@ div {
 }
 
 .codigo {
-	justify-items: center;
-display: flex;
-    margin: 0.2em 1em;
-	font-size: 150%;
+	justify-items:center;
+	display: flex;
+    margin: 0.5em 1em;
+	font-size: 100%;
     color: #fff;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -68,6 +68,7 @@ display: flex;
 .codigo:hover {
 	color: black;
 }
+
 .Iconos {
 	text-align: right;
   }
@@ -75,7 +76,7 @@ display: flex;
 .Iconos img {
 	width: 30%;
 	height: 30%;
-	margin: 2em;
+	margin: 1em;
 }
   
   .Iconos img:hover {
@@ -88,7 +89,7 @@ display: flex;
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	gap: 0.8em;
+	gap: 0.1em;
   }
   
   /* Estilos para cada ícono y su nombre */
