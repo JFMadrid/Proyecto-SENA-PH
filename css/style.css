@@ -28,11 +28,10 @@ body#index {
 
 header {
 		background: #0099CC;
-		  height: 2.8em;
-		  display: flex;
+		height: 2.8em;
+		display: flex;
 		font-family: Verdana;
 		opacity: 0.6;
-	
 		margin:auto;
 }
 
@@ -52,14 +51,19 @@ div {
 	width: 100%;
 }
 
+.cabeza .Iconos div {
+	width: 50%;
+}
+
 .cabeza:hover {
   background: #10c39c;
 }
 
 .codigo {
-	justify-items:center;
+	justify-items:center; 
 	display: flex;
     margin: 0.5em 1em;
+	font-stretch: condensed;
 	font-size: 100%;
     color: #fff;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -530,6 +534,11 @@ input#boton5 {
 
 input#boton5:hover {
 	background-color: rgb(255, 0, 0);
+}
+
+input#boton6 {
+	width: 6em;
+	padding: 0.5em 1em;
 }
 
 
