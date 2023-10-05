@@ -180,7 +180,8 @@ main .content {
   color: #ffffff;
   padding: 10px;
   text-align: center;
-  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 
 }
 
@@ -194,14 +195,24 @@ main .content {
   }
   
 .gestion-menu .button a {
-	display: none;
 	text-decoration: none;
 	color: #FFFFFF;
+	position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  align-content: center;
 }
 
 .gestion-menu .button:hover a {
 	display: block;
 	text-decoration: none;
+	opacity: 1;
   }
   
 .gestion-menu .row {
