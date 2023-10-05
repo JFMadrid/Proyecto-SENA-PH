@@ -1,5 +1,5 @@
 * {
-	margin: 0%;
+	margin: 0;
 }
 
 .body {
@@ -8,369 +8,256 @@
 
 body {
 	
-	background-color: whitesmoke;
+	background-color: #f5f5f5;
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto';
 }
 
 body#index {
 	background-image: url("../img/Conjunto_Residencial.jpg");
 	max-width: 100%;
 	max-height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
+	object-fit: cover;
+	object-position: bottom;
+	}
 
 
-header {
-		background: #0099CC;
-		height: 2.8em;
-		display: flex;
-		font-family: Verdana;
-		opacity: 0.6;
-		margin:auto;
-}
 
 div {
-	justify-content: right;
+	justify-content: center;
 }
-.cabeza {
-	background: #0099CC;
+
+header.cabeza {
+	background: #0d6efd;
 	width: 100%;
-	height: 2.8em;
-	font-family: Verdana;
+	height: 3.5em;
 	opacity: 1;
 	position: fixed;
 	
 }
-.cabeza div{
+
+div#header.cabeza{
 	width: 100%;
 }
 
-.cabeza .Iconos div {
-	width: 50%;
+header nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+	padding: 0px 0px;
 }
 
-.cabeza:hover {
-  background: #10c39c;
-}
 
-.codigo {
-	justify-items:center; 
-	display: flex;
-    margin: 0.5em 1em;
-	font-stretch: condensed;
-	font-size: 100%;
-    color: #fff;
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
-.codigo:hover {
-	color: black;
-}
-
-.Iconos {
-	text-align: right;
-  }
-
-.Iconos img {
-	width: 30%;
-	height: 30%;
-	margin: 1em;
-}
-  
-  .Iconos img:hover {
-	background: beige;
-	border-radius: 0.3em;
-  }
-/* Estilos generales para los iconos y el contenedor */
-/* Estilos para el contenedor de los iconos */
-.Iconos {
-	display: flex;
-	justify-content: right;
-	align-items: center;
-	gap: 0.1em;
-  }
-  
-  /* Estilos para cada ícono y su nombre */
-  .Iconos span {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	position: relative;
-  }
-  
-  .Iconos img {
-	max-width: 3em;
-	transition: transform 0.3s; /* Transición suave para el efecto hover */
-  }
-  
-  /* Estilos para mostrar el nombre al hacer hover en el ícono */
-  .Iconos span:hover img {
-	transform: translateY(-0.6em); /* Elevamos el ícono cuando se hace hover */
-  }
-  
-  /* Estilos para el nombre */
-  .Iconos span span {
-	position: absolute;
-	bottom: -1.9em;
-	left: 0;
-	transform: translateX(-50%);
-	opacity: 0;
-	transition: opacity 0.3s, transform 0.3s;
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	padding: 0.3em 0.6em;
-	border-radius: 0.3em;
-	font-size: 0.8em;
-	white-space: nowrap;
-  }
-  
-  /* Estilos para mostrar el nombre al hacer hover en el ícono */
-  .Iconos span:hover span {
+header div#navbarResponsive.navbar-collapse.collapse {
+	background: #0d6efd;
 	opacity: 1;
-	transform: translateY(-0.6em); /* Elevamos ligeramente el nombre */
-  }
+}
 
-  main {
+header a#logo.navbar-brand {
+	font-family: 'Teko';
+	font-size: 150%;
+	transition: 0.45s;
+}
+
+header a.navbar-brand:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+header img#img-logo {
+	width: 30px;
+	margin-right: 10px;
+}
+
+header a.nav-link {
+	width: 100%;
+	align-items:center;
+	padding-left: 10px;
+	color: #FFFFFF;
+	text-align:left;
+	transition: 0.45s;
+}
+
+header a.nav-link:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+header li.nav-item {
+	width: 150px;
+}
+
+
+header img#img-icono1, img#img-icono2  {
+	width: 19%;
+	margin-right: 10px
+}
+
+header img#img-icono3 {
+	width: 16%;
+	margin-right: 10px;
+}
+
+
+main {
 	width: 100%;
 	height: 100%;
 	margin:auto;
-	font-family: Arial, Helvetica, sans-serif;
 	padding-top: 4em;
 	padding-bottom: 4em;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
 
 
-  }
-  
- 
-/*contenidos*/
-.content {
+main .container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+main .content {
 	max-width: 40em;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
-	padding-top: 3em;
-}
-
-
-.logo  {
+	padding-top: 1em;
 	text-align: center;
-	font-size: 2.5em;
-	font-family:'Gill Sans MT';
-	font-style: oblique;
-	font-weight: bolder;
-	padding: 0.4em;
+	justify-content: center;
 }
 
-.contact-wrapper {
+/* Botones Index */
+.container-index {
+	width: 500px;
+	max-width: 800px;
+	margin: 0 auto;
+	align-content: flex-start;
+
+}
+  
+  .gestion-menu {
+	background-color: transparent;
+	padding: 20px;
+	opacity: 1;
+}
+  
+.gestion-menu .content {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	
+ }
+  
+.gestion-menu .contact-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	
+  }
+  
+.gestion-menu .contact-form {
+	width: 100%;
+	
+  }
+  
+.gestion-menu .form-group {
+	margin-bottom: 20px;
+	
+  }
+  
+.gestion-menu .button {
+	width: 50px;
+  height: 50px;
+  border-radius: 5%;
+  background-color: #000;
+  text-overflow: clip;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+  
+.gestion-menu .button:hover {
+	width: 100%;
+  background-color: #0d6efd;
+  color: #ffffff;
+
+  transition: width 0.5s;
+  }
+  
+.gestion-menu .button a {
+	display: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.gestion-menu .button:hover a {
+	display: block;
+	text-decoration: none;
+  }
+  
+.gestion-menu .row {
+	display: flex;
+	flex-direction: column;
+  }
+
+
+
+  
+.logo {
+	font-size: 24px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	
+  }
+
+
+  .contact-wrapper {
 	box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.8);
 	background: white;
 	border-radius: 0.4em;
+	margin-bottom: 20px;
 }
 
 .contact-wrapper > * {
 	padding: 1em;
 }
 
-.registration-form .contact-form form  {
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-}
+.contact-form {
+	margin-top: 2em;
+  }
+  
+  .form-group {
+	margin-bottom: 10px;
+  }
 
-.renter-form .contact-form form  {
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-}
-
-.documents-form .contact-form form  {
-	display: grid;
-}
-
-.penalties-form .contact-form form  {
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-	width: 90%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 1.25em;
-}
-
-.statement-form .contact-form form  {
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-	width: 90%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 1.25em;
-}
-
-.reservation-form .contact-form form  {
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-	width: 90%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 1.25em;
-}
-
-.contact-form form p{
-	color:black;
-	font-weight: bolder;
-	font-size: 1em;
-	margin: 0;
-	padding: 0.5em;
-}
-
-
-.registration-form .contact-form form input{
-	width: 90%;
-	padding: 0.4em;
-	border: none;
-	background: none;
-	outline: 0;
-	border-bottom: 0.06em solid #d63031;
-}
-
-.renter-form .contact-form form input{
-	width: 90%;
-	padding: 0.4em;
-	border: none;
-	background: none;
-	outline: 0;
-	border-bottom: 0.06em solid #d63031;
-}
-
-.documents-form .contact-form form input{
+  .form-group.col-md-6 {
+	margin-top: 1em;
+  }
+  
+  .form-control {
 	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
+	padding: 10px;
+	border-radius: 4px;
+  }
+  
+  .form-text {
+	font-size: 14px;
+	margin-bottom: 5px;
+  }
 
-.penalties-form .contact-form form input{
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.statement-form .contact-form form input{
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.reservation-form .contact-form form input{
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.registration-form .contact-form form select {
-	width: 90%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.renter-form .contact-form form select {
-	width: 90%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.documents-form .contact-form form select {
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.penalties-form .contact-form form select {
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.reservation-form .contact-form form select {
-	width: 100%;
-	padding: 0.4em;
-	font-size: 0.87em;
-	background: none;
-	outline: 0;
-	border-radius: 0.6em;
-}
-
-.search-button .container {
-	max-width:40em;
-	padding: 5%;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
-
-
-.search-button .container input {
-	padding: 0.6em;
-	border-radius: 0.6em;
-	border: 1;
-	outline: none;
-	background: white;
-	Width: 12em;
-	
-}
-
-.search-button input#boton {
-	width: 6em;
-	padding: 0.5em 1em;
-	font-size: 1em;
+  label {
 	font-weight: bold;
-	background-color: #B3B6B7 ;
-	border: 0;
-	border-radius: 0.4em;
-	box-shadow: 0.3em 0.3em 0.4em #043555;
-	transition:background-color 0.45s;
-}
-
-.search-button input#boton:hover {
-	background-color: #515A5A;
-}
-
-
+  }
 
 input#boton1 {
 	width: 6em;
@@ -397,96 +284,12 @@ input#boton2 {
 	border: 0;
 	border-radius: 0.4em;
 	box-shadow: 0.3em 0.3em 0.4em #043555;
-	transition:background-color 0.45s;;
+	transition:background-color 0.45s;
 }
 
 input#boton2:hover {
 	background-color: rgb(255, 0, 0);
 }
-
-/*Estilos tablas*/
-.outer-wrapper {
-    margin: 0;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-	margin-bottom: 6.25em;
-    border: 0.06em solid black;
-    border-radius: 0.25em;
-    box-shadow: 0 0 0.18em rgba(0, 0, 0, 0.9);
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-.statement-form .outer-wrapper {
-    margin-left: auto;
-    margin-right: auto;
- }
-
-.table-wrapper {
-	overflow-y:scroll;
-    overflow-x:scroll;
-    height: fit-content;
-    max-height: 40em;
-    margin-top: 1.3em;
-    margin: 0.9em;
-    padding-bottom: 1.5em;
-}
-
-table {
-    min-width: max-content;
-    border-collapse: separate;
-    border-spacing: 0;    
-}
-
-table th{
-    position: sticky; 
-    top: 0;
-    background-color: #133b5c;
-    color: rgb(241, 245, 179);
-    text-align: center;
-    font-weight: normal;
-    font-size: 0.8em;
-    outline: 0.04em solid black;
-    border: 0.09em solid black;
-
-} 
-
-table th, table td {
-    padding: 0.9em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    
-}
-
-table td {
-    text-align: left;
-    font-size: 0.8em;
-    border: 0.06em solid rgb(177, 177, 177);
-    padding-left: 1.25em;
-    
-}
-
-.registration-form .outer-wrapper a {
-	width: 6em;
-	padding: 0.5em 1em;
-	margin: 3em;
-	color:white;
-	font-size: 1em;
-	background-color: #5dade2;
-	border: 0;
-	text-decoration: none;
-	border-radius: 0.4em;
-	box-shadow: 0.3em 0.3em 0.4em #043555;
-}
-
-textarea {
-	border: 0.12em solid black;
-	resize: none;
-	width: 100%;
-	border-radius: 0.6em;
-	resize: none;
-}
-
 
 input#boton3 {
 	width: 6em;
@@ -541,107 +344,301 @@ input#boton6 {
 	padding: 0.5em 1em;
 }
 
+.container-confirm {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
 
-/*Menu en pie*/
-.menu-footer{
+.gestion-menu,
+.registration-form, 
+.renter-form, 
+.documents-form,
+.penalties-form,
+.search-button,
+.reservation-form,
+.statement-form {
+	background-color: #fff;
+	width: 100%;
+	max-width: 800px;
+	padding: 20px;
+	border-radius: 10px;
+	align-content:center;
+	justify-content: center;
+  }
+
+.registration-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.renter-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.documents-form .contact-form form input{
+	width: 100%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.penalties-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.reservation-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.statement-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.registration-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.renter-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.documents-form .contact-form form select {
+	width: 100%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.penalties-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.reservation-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.search-button input {
+		padding: 0.6em;
+		border-radius: 0.6em;
+		border: 1;
+		outline: none;
+		background: white;
+		Width: 12em;
+		
+	}
+
+.search-button input#boton {
+	width: 6em;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #B3B6B7 ;
+	border: 0;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+	transition:background-color 0.45s;
+}
+	
+.search-button input#boton:hover {
+	background-color: #515A5A;
+}
+
+input#file {
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+}
+
+textarea {
+	border: 0.12em solid black;
+	resize: none;
+	width: 90%;
+	border-radius: 0.6em;
+	resize: none;
+}
+
+
+
+.outer-wrapper {
+    margin: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+	margin-bottom: 6.25em;
+    border: 0.06em solid black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.18em rgba(0, 0, 0, 0.9);
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.table-wrapper {
+	overflow-y:scroll;
+    overflow-x:scroll;
+    height: fit-content;
+    max-height: 40em;
+    margin-top: 1.3em;
+    margin: 0.9em;
+    padding-bottom: 1.5em;
+}
+
+
+table {
+	height: fit-content;
+    max-height: 40em;
+    margin-top: 1.3em;
+    margin: 2em;
+    padding-bottom: 1.5em;
+}
+
+th.col-md-4{
+	position: flex; 
+    top: 0;
+	left: 0;
+    background-color: #133b5c;
+    color: rgb(241, 245, 179);
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.8em;
+    border: 0.09em solid black;
+
+} 
+
+th.col-md-4, td.col-md-4 {
+    padding: 0.9em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    
+}
+
+td.col-md-4 {
+    text-align: left;
+    font-size: 0.8em;
+    border: 0.06em solid rgb(177, 177, 177);
+    padding-left: 1.25em;
+    
+}
+
+.registration-form .table-wrapper a {
+	width: 6em;
+	padding: 0.5em 1em;
+	margin: 1.2em;
+	color:white;
+	font-size: 1em;
+	background-color: #5dade2;
+	border: 0;
+	text-decoration: none;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+}
+
+
+footer.menu-footer{
     position: fixed;
+	display: flex;
     bottom: 0;
     width: 100%;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #0d6efd;
+	height: 3.5em;
+	opacity: 1;
 }
 
-#menu {
-	background:  #0099CC;
-	color: #FFF;
-	height: 2.8em;
-	padding-left: 1.12em;
-    position: relative;
-}
-#menu ul, #menu li {
+footer div.container-fluid.mx-5 {
 	margin: 0 auto;
-	padding: 0;
-	list-style: none
-}
-#menu ul {
 	width: 100%;
 }
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
+
+footer div#navbarSupportedContent.navbar-collapse.collapse {
+	justify-content: center;
+	background: #0d6efd;
+	opacity: 1;
 }
-#menu a {
-	display: block;
-	line-height: 2.8em;
-	padding: 0 0.87em;
-	text-decoration: none;
+
+footer a.nav-link.active {
+	align-items:center;
+	padding: 10px 0px;
 	color: #FFFFFF;
-	font-size: 1em;
+	text-align:left;
+	transition: 0.45s;
 }
-#menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 0.3em;
+
+footer a.nav-link.active:hover {
+	color: #000;
+	font-weight: bold;
 }
-#menu li a:hover {
-	color: #0099CC;
-	background: #F2F2F2;
+
+footer button.navbar-toggler {
+	width: 56px;
+	height: 40px;
+	margin: 7px 20px;
+  }
+
+footer ul.navbar-nav {
+	color: #0d6efd;
+	margin: 0px 25px;
 }
-#menu input {
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 2.8em;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
-}
-#menu label {
-	display: none;
-	line-height: 2.8em;
-	text-align: center;
-	position: absolute;
-	left: 35px
-}
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 1.25em;
-}
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 10.6em;
-	background: rgb(65, 134, 247);
-	position: absolute;
-	z-index: 99;
-	display: none;
-    bottom: 2.8em;
-}
-#menu ul.sub-menus li {
-	display: block;
-	width: 100%;
-}
-#menu ul.sub-menus a {
+
+footer .dropdown-item {
 	color: #FFFFFF;
-	font-size: 1em;
-}
-#menu li:hover ul.sub-menus {
-	display: block
-}
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #444444;
-}
-@media screen and (max-width: 50em){
-	#menu {position:relative;}
-	#menu ul {background:rgb(65, 134, 247);position:absolute;bottom:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:1.87em;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-}
+	background-color: #0d6efd;
+	margin:auto;
+  }
+
+  footer .dropdown-item:hover {
+	color: #000 ;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	transition: 0.45s;
+  }
+
+
 

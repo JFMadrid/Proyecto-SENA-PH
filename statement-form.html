@@ -1,172 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estado de Cuenta</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado de Cuenta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.google.com/">
 </head>
 
 <body>
-    
-   <header class="cabeza">
-    <div>
-      <span class="codigo">CONJUNTO RESIDENCIAL</span></div></div>
-
-    <div class="Iconos">
-      <span>
-        <img src="img/Contacto.png"><span>Contacto</span>
-      </span>
-      <span>
-        <img src="img/Ayuda.png"><span>Ayuda</span>
-      </span>
-      <span>
-        <img src="img/Notificaciones.png"><span>Notificaciones</span>
-      </span>
-    </div>
-   </header> 
-
-   
-   <main>
-    <div class="statement-form">
-      <div class="content">
-        <h1 class="logo">Pagos</h1>
+  <header class="cabeza">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container px-4">
+        <img src="img/Logo_PH.png" id="img-logo">
+          <a class="navbar-brand" href="index.html" id="logo">CONJUNTO RESIDENCIAL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#contact"><img src="img/Contacto.png" id="img-icono1">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#help"><img src="img/Ayuda.png" id="img-icono2">Ayuda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#notification"><img src="img/Notificaciones.png" id="img-icono3">Notificaciones</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="statement-form">
+        <div class="content">
+          <h1 class="logo" id="logo">Estado de Cuenta</h1>
           <div class="contact-wrapper">
             <div class="contact-form">
               <form action="">
-                <p>
-                  <label for="apartamento">N° Apartamento</label>
-                  <input type="text" name="apartamento" id="apartamento"> 
-                </p>
+                <div class="row">
+                  
+                    <div class="form-group col-md-6">
+                      <label for="apartamento">N° Apartamento</label>
+                      <input type="text" name="apartamento" id="apartamento" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <label for="torre-interior">Torre o Interior</label>
+                      <input type="text" name="Torre-interior" id="torre-interior" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <label for="nombres-propietario">Nombres</label>
+                      <input type="text" name="nombres-propietario" id="nombres-propietario" class="form-control" required>
+                    </div>
+                  
+                    <div class="form-group col-md-6">
+                      <label for="apellidos-propietario">Apellidos</label>
+                      <input type="text" name="apellidos-propietario" id="apellidos-propietario" class="form-control" required>
+                    </div>
 
-                <p>
-                  <label for="torre_interior">Torre o Interior</label>
-                  <input type="text" name="Torre_interior" id="torre_interior">
-                </p>
+                    <div class="form-group col-md-6">
+                      <label for="n-documento">Documento</label>
+                      <input type="number" name="n-documento" id="n-documento" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <label for="fecha-pago">Fecha Pago</label>
+                      <input type="date" name="fecha-pago" id="fecha-pago" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <label for="ref-pago">Referencia Pago</label>
+                      <input type="text" name="ref-pago" id="ref-pago" class="form-control" required>
+                    </div>
 
-                <p>
-                  <label for="nombres_propietario">Nombres</label>
-                  <input type="text" name="nombres_propietario" id="nombres_propietario">
-                </p>
+                    <div class="form-group col-md-6">
+                      <label>Evidencia</label>
+                      <input type="file" name="file" id="file" required>
+                    </div>
 
-                <p>
-                  <label for="apellidos_propietario">Apellidos</label>
-                  <input type="text" name="apellidos_propietario" id="apellidos_propietario">
-                </p>
+                    <div class="container-confirm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5>Al Día</h5>
+                            <a href="#" class="btn btn-success" data-confirm="¿Está seguro de que desea confirmar la cartera al día?">Confirmar</a>
+                        </div>
+                        <div class="col-md-6">
+                          <h5>Moroso</h5>
+                            <a href="#" class="btn btn-danger" data-confirm="¿Está seguro de que desea confirmar la cartera morosa?">Confirmar</a>
+                        </div>
+                      </div>
+                    </div>
+                    
 
-                <p>
-                  <label for="n_documento">Documento</label>
-                  <input type="number" name="n_documento" id="n_documento">
-                </p>
 
-                <p>
-                  <label for="fecha_pago">Fecha de Pago</label>
-                  <input type="date" name="fecha_pago" id="fecha_pago">
-                </p>
-
-                <p>
-                  <label for="ref_pago">Referencia de Pago</label>
-                  <input type="text" name="ref_pago" id="ref_pago">
-                </p>
-
-                <p>
-                  <label>Evidencia</label>
-                  <input type="file" name="file" id="file">
-                </p>
-                
-                <p>
-				          <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-                    <label class="btn btn-outline-success" for="success-outlined">Al día</label>
-                </p>
-                <p>
-                  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-                  <label class="btn btn-outline-danger" for="danger-outlined">Moroso</label>
-                </p>
-              </form>
+                </div>
+    
+                </form>
             </div>
           </div>
-      </div>
-    
-      <div class="outer-wrapper">
+        </div>
+        <div class="outer-wrapper">
         <div class="table-wrapper">
           <h1 class="logo">Estados de Cuenta</h1>
           <table>
             <thead>
-              <th>ID</th>
-              <th>Torre o Interior</th>
-              <th>N° Apartamento</th>
-              <th>Estado</th>
-              <th>Aprobado</th>
-              <th>Modificar</th>
-              <th>Eliminar</th>
+              <tr>
+                <th class="col-md-4">ID</th>
+                <th class="col-md-4">Torre o Interior</th>
+                <th class="col-md-4">N° Apartamento</th>
+                <th class="col-md-4">Estado</th>
+                <th class="col-md-4">Aprobado</th>
+                <th class="col-md-4">Modificar</th>
+                <th class="col-md-4">Eliminar</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td>Interior</td>
-                <td>Apartamento</td>
-                <td>Moroso</td>
-                 <td><input type="checkbox" id="boton6"/></td>
-                <td><input type="submit" value="Modificar" id="boton4"/></td>
-                <td><input type="reset" value="Eliminar" id="boton5"/></td>
+                <td class="col-md-4">1</td>
+                <td class="col-md-4">Interior</td>
+                <td class="col-md-4">Apartamento</td>
+                <td class="col-md-4">Moroso</td>
+                <td class="col-md-4"><input type="checkbox" id="boton6"/></td>
+                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
+                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>Interior</td>
-                <td>Apartamento</td>
-                <td>Al día</td>
-                <td><input type="checkbox" id="boton6"/></td>
-                <td><input type="submit" value="Modificar" id="boton4"/></td>
-                <td><input type="reset" value="Eliminar" id="boton5"/></td>
+                <td class="col-md-4">2</td>
+                <td class="col-md-4">Interior</td>
+                <td class="col-md-4">Apartamento</td>
+                <td class="col-md-4">Al día</td>
+                <td class="col-md-4"><input type="checkbox" id="boton6"/></td>
+                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
+                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
               <tr>
-                <td>3</td>
-                <td>Interior</td>
-                <td>Apartamento</td>
-                <td>Moroso</td>
-                <td><input type="checkbox" id="boton6"/></td>
-                <td><input type="submit" value="Modificar" id="boton4"/></td>
-                <td><input type="reset" value="Eliminar" id="boton5"/></td>
+                <td class="col-md-4">3</td>
+                <td class="col-md-4">Interior</td>
+                <td class="col-md-4">Apartamento</td>
+                <td class="col-md-4">Moroso</td>
+                <td class="col-md-4"><input type="checkbox" id="boton6"/></td>
+                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
+                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
             </tbody>
           </table>
         </div>
+        </div>
+
+      </div>
+    </div>
+    
+    
+  </main>
+  
+    
+  <footer class="menu-footer" >
+    <nav class="navbar navbar-expand-md navbar-dark fixed-bottom dropup">
+      <div class="container-fluid mx-5 ">
+        <button class="navbar-toggler fixed-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" onclick='updatemenu()'><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" class="container-fluid mx-auto">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+            <li class="nav-item"><a class="nav-link active" aria-current="" href="index.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administración</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="registration-form.html">Registro</a></li>
+                <li><a class="dropdown-item" href="documents-form.html">Documentación</a></li>
+                <li><a class="dropdown-item" href="search-button.html">Buscar Información</a></li>
+                <li><a class="dropdown-item" href="penalties-form.html">Multas</a></li>
+                <li><a class="dropdown-item" href="reservation-form.html">Reservaciones</a></li>
+                <li><a class="dropdown-item" href="statement-form.html">Estado de Cuenta</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="" href="#">NotiConjunto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Propietarios</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="#">Pagos Obligaciones</a></li>
+                <li><a class="dropdown-item" href="#">Solicitudes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aseo</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="#">Ingresos</a></li>
+                <li><a class="dropdown-item" href="#">Reportes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vigilancia</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="#">Ingresos</a></li>
+                <li><a class="dropdown-item" href="#">Reportes</a></li>
+              </ul>
+            </li>
+          </ul>
          
-        </div>  
-   </main>
-   
-
-   <footer class="menu-footer">
-    <nav class="navbar navbar-expand-md fixed-bottom bg-primary dropup" id='menu'>
-
-      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a class='dropdown-arrow' href='#'>Administración</a>
-          <ul class='sub-menus'>
-            <li><a class="dropdown-item" href="registration-form.html">Registro</a></li>
-            <li><a class="dropdown-item" href="documents-form.html">Documentación</a></li>
-            <li><a class="dropdown-item" href="search-button.html">Buscar Info</a></li>
-            <li><a class="dropdown-item" href="penalties-form.html">Multas</a></li>
-            <li><a class="dropdown-item" href="reservation-form.html">Reservaciones</a></li>
-            <li><a class="dropdown-item" href="statement-form.html">Estado de Cuenta</a></li>
-          </ul>
-        </li>
-        <li><a href="#">NotiConjunto</a></li>            
-        <li><a class='dropdown-arrow' href='http://'>Sobre Nosotros</a>
-          <ul class='sub-menus'>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Misión</a></li>
-            <li><a href="#">Visión</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Vigilancia</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
+    
    </footer>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
