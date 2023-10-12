@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscar Información</title>
+  <title>Inicio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
   <link href="https://fonts.google.com/">
 </head>
 
-<body>
+<body id="index">
   <header class="cabeza">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container px-4">
@@ -22,9 +22,11 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#admin"><img src="img/admin.png" id="img-icono3">Conserje</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact"><img src="img/Contacto.png" id="img-icono1">Contacto</a></li>
                 <li class="nav-item"><a class="nav-link" href="#help"><img src="img/Ayuda.png" id="img-icono2">Ayuda</a></li>
                 <li class="nav-item"><a class="nav-link" href="#notification"><img src="img/Notificaciones.png" id="img-icono3">Notificaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cerrar_sesion"><img src="img/cerrar_sesion.png" id="img-icono3">Cerrar Sesión</a></li>
               </ul>
           </div>
       </div>
@@ -32,113 +34,35 @@
   </header>
   
   <main>
-    <div class="container">
-      <div class="search-button">
+    
+   
+    <div class="container-index">
+      <div class="gestion-menu">
         <div class="content">
-          <h1 class="logo" id="logo">Buscar Información</h1>
+          <h1 class="logo" id="logo">Menú de Gestión Conserje</h1>
           <div class="contact-wrapper">
             <div class="contact-form">
               <form action="">
                 <div class="row">
                   
-                  <div class="search form-group col-md-6" >
-                    <input type="text" placeholder="Digite Interior o Torre" required>
-                  </div>
-                  <div class="search form-group col-md-6" >
-                    <input type="text" placeholder="Digite Apartamento" required>
-                  </div>
-                  <div class="search form-group col-md-3" >
-                    <input type="submit" value="Buscar" id="boton"/>
-                  </div>
+                    <div class="button form-group col-md-6">
+                      <a href="reservation-form.html">Reservaciones</a>
+                    </div>
 
+                    <div class="button form-group col-md-6">
+                      <a href="income-form.html">Ingresos</a>
+                    </div>
+                  </form>
                 </div>
-    
-              </form>
+              </div>
             </div>
           </div>
         </div>
-        <div class="outer-wrapper">
-        <div class="table-wrapper">
-          <h1 class="logo">Propietarios</h1>
-          <table>
-            <thead>
-              <tr>
-                <th class="col-md-4">ID</th>
-                <th class="col-md-4">Torre o Interior</th>
-                <th class="col-md-4">N° Apartamento</th>
-                <th class="col-md-4">Documento</th>
-                <th class="col-md-4">Fecha Expedición</th>
-                <th class="col-md-4">Nombres</th>
-                <th class="col-md-4">Apellidos</th>
-                <th class="col-md-4">Fecha Nacimiento</th>
-                <th class="col-md-4">Correo Eléctrónico</th>
-                <th class="col-md-4">Celular</th>
-                <th class="col-md-4">Teléfono Fijo</th>
-                <th class="col-md-4">Sexo</th>
-                <th class="col-md-4">Modificar</th>
-                <th class="col-md-4">Eliminar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="col-md-4">1</td>
-                <td class="col-md-4">Interior</td>
-                <td class="col-md-4">Apartamento</td>
-                <td class="col-md-4">Documento</td>
-                <td class="col-md-4">Expedición</td>
-                <td class="col-md-4">Nombres</td>
-                <td class="col-md-4">Apellidos</td>
-                <td class="col-md-4">Nacimiento</td>
-                <td class="col-md-4">Correo Electrónico</td>
-                <td class="col-md-4">Celular</td>
-                <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Sexo</td>
-                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
-                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
-              </tr>
-              <tr>
-                <td class="col-md-4">2</td>
-                <td class="col-md-4">Interior</td>
-                <td class="col-md-4">Apartamento</td>
-                <td class="col-md-4">Documento</td>
-                <td class="col-md-4">Expedición</td>
-                <td class="col-md-4">Nombres</td>
-                <td class="col-md-4">Apellidos</td>
-                <td class="col-md-4">Nacimiento</td>
-                <td class="col-md-4">Correo Electrónico</td>
-                <td class="col-md-4">Celular</td>
-                <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Sexo</td>
-                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
-                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
-              </tr>
-              <tr>
-                <td class="col-md-4">3</td>
-                <td class="col-md-4">Interior</td>
-                <td class="col-md-4">Apartamento</td>
-                <td class="col-md-4">Documento</td>
-                <td class="col-md-4">Expedición</td>
-                <td class="col-md-4">Nombres</td>
-                <td class="col-md-4">Apellidos</td>
-                <td class="col-md-4">Nacimiento</td>
-                <td class="col-md-4">Correo Electrónico</td>
-                <td class="col-md-4">Celular</td>
-                <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Sexo</td>
-                <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
-                <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        </div>
+            
+    
+    
 
-      </div>
-    </div>
-    
-    
   </main>
-  
     
   <footer class="menu-footer" >
     <nav class="navbar navbar-expand-md navbar-dark fixed-bottom dropup">

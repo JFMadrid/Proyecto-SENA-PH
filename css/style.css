@@ -110,16 +110,16 @@ main {
 	padding-bottom: 4em;
 	display: flex;
   	justify-content: center;
-  	align-items: center;
+  	align-items: left;
 }
 
 
 main .container {
 	width: 100%;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 	text-align: center;
-	justify-content: center;
+	justify-content: left;
 }
 
 main .content {
@@ -129,98 +129,89 @@ main .content {
 	padding: 1em;
 	padding-top: 1em;
 	text-align: center;
+}
+
+main#main-index {
+	width: 300px;
+	margin:auto;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.login-form {
+	background: #f1f4f2;
+	border-radius: 10px;
+	text-align: center;
+ 
+}
+
+.container-index {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
 	justify-content: center;
 }
 
-/* Botones Index */
-.container-index {
-	width: 500px;
-	max-width: 800px;
-	margin: 0 auto;
-	align-content: flex-start;
-
-}
-  
-  .gestion-menu {
-	background-color: transparent;
+.gestion-menu {
+	background-color: #fff;
 	padding: 20px;
-	opacity: 1;
+	justify-content: left;
 }
-  
+
 .gestion-menu .content {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	
- }
-  
-.gestion-menu .contact-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items:flex-start;
-	
-  }
-  
-.gestion-menu .contact-form {
-	width: 100%;
-	
-  }
-  
-.gestion-menu .form-group {
-	margin-bottom: 20px;
-	
-  }
-  
-.gestion-menu .button {
-	width: 50px;
-  height: 50px;
-  border-radius: 5%;
-  background-color: #000;
-  text-overflow: clip;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
 }
 
-  
-.gestion-menu .button:hover {
-	width: 100%;
-  background-color: #0d6efd;
-  color: #ffffff;
+gestion-menu .contact-wrapper {
+	display:block;
+}
 
-  transition: width 0.5s;
-  }
-  
+.gestion-menu .form-group {
+	margin-bottom: 20px;
+}
+
+.gestion-menu .button {
+	width: 200px;
+	height: 50px;
+	border-radius: 5% 5% 50% 50%;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+	border: 0;
+	background-color: #2f4f4f;
+	text-overflow: clip;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+}
+
+.gestion-menu .button:hover {
+	
+	background-color: #0d6efd;
+	color: #ffffff;
+	transition: width 0.5s;
+}
+
 .gestion-menu .button a {
 	text-decoration: none;
 	color: #FFFFFF;
-	position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s;
-  align-content: center;
+	position: center;
+	top: 50%;
+	left: 50%;
+	
+	width: 100%;
+	height: 100%;
+	align-content: center;
 }
 
 .gestion-menu .button:hover a {
-	display: block;
+	display:grid;
 	text-decoration: none;
-	opacity: 1;
-  }
-  
-.gestion-menu .row {
-	display: flex;
-	flex-direction: column;
-  }
-
-
+}
 
   
 .logo {
@@ -360,6 +351,8 @@ input#boton6 {
 	margin-bottom: 30px;
 }
 
+.reservation-janitor-form,
+.income-form,
 .gestion-menu,
 .registration-form, 
 .renter-form, 
@@ -395,6 +388,15 @@ input#boton6 {
 	border-bottom: 0.06em solid #d63031;
 }
 
+.income-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
 .documents-form .contact-form form input{
 	width: 100%;
 	padding: 0.4em;
@@ -414,6 +416,15 @@ input#boton6 {
 }
 
 .reservation-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.reservation-janitor-form .contact-form form input{
 	width: 90%;
 	padding: 0.4em;
 	border: none;
@@ -449,6 +460,15 @@ input#boton6 {
 	border-radius: 0.6em;
 }
 
+.income-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
 .documents-form .contact-form form select {
 	width: 100%;
 	padding: 0.4em;
@@ -468,6 +488,15 @@ input#boton6 {
 }
 
 .reservation-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.reservation-janitor-form .contact-form form select {
 	width: 90%;
 	padding: 0.4em;
 	font-size: 0.87em;

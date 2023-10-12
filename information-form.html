@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multas</title>
+  <title>Datos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
@@ -33,9 +33,9 @@
   
   <main>
     <div class="container">
-      <div class="penalties-form">
+      <div class="registration-form">
         <div class="content">
-          <h1 class="logo" id="logo">Multa</h1>
+          <h1 class="logo" id="logo">Datos Personales</h1>
           <div class="contact-wrapper">
             <div class="contact-form">
               <form action="">
@@ -52,7 +52,7 @@
                     </div>
     
                     <div class="form-group col-md-6">
-                      <label for="n-documento">Documento Infractorr</label>
+                      <label for="n-documento">Documento Propietario</label>
                       <input type="number" name="n-documento" id="n-documento" class="form-control" required>
                     </div>
     
@@ -62,13 +62,18 @@
                     </div>
     
                     <div class="form-group col-md-6">
-                      <label for="nombres-infractor">Nombres Infractor</label>
-                      <input type="text" name="nombres-infractor" id="nombres-infractor" class="form-control" required>
+                      <label for="nombres-propietario">Nombres Propietario</label>
+                      <input type="text" name="nombres-propietario" id="nombres-propietario" class="form-control" required>
                     </div>
                   
                     <div class="form-group col-md-6">
-                      <label for="apellidos-infractor">Apellidos Infractor</label>
-                      <input type="text" name="apellidos-infractor" id="apellidos-infractor" class="form-control" required>
+                      <label for="apellidos-propietario">Apellidos Propietario</label>
+                      <input type="text" name="apellidos-propietario" id="apellidos-propietario" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <label for="fecha_nacimiento">Fecha Nacimiento</label>
+                      <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" class="form-control" required>
                     </div>
     
                     <div class="form-group col-md-6">
@@ -76,6 +81,11 @@
                       <input type="email" name="email" id="email" class="form-control" required>
                     </div>
     
+                    <div class="form-group col-md-6">
+                      <label for="celular">Whatsapp</label>
+                      <input type="tel" name="number" id="celular" class="form-control" required>
+                    </div>
+
                     <div class="form-group col-md-6">
                       <label for="celular">Celular</label>
                       <input type="tel" name="number" id="celular" class="form-control" required>
@@ -87,42 +97,18 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label for="price">Valor Multa</label>
-                      <input type="price" name="price" id="price" class="form-control" required>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label for="fecha-infraccion">Fecha Infracción</label>
-                      <input type="date" name="fecha-infraccion" id="fecha-infractor" class="form-control" required>
+                      <label for="Sexo">Sexo</label>
+                      <input type="tel" name="number" id="telefono" class="form-control" required>
                     </div>
     
-                    <div class="form-group col-md-6">
-                      <label>Infracción</label>
-                      <select name="infraccion" required>
-                        <option value="Seleccione">Seleccione</option>
-                        <option value="mora">Mora Pago Obligaciones</option>
-                        <option value="incumplimiento">Incumplimiento Código Policia</option>
-                        <option value="otros">Otros</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label>Evidencia</label>
-                      <input type="file" name="file" id="file" required>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label>Descripción</label>
-                      <textarea rows="3" cols="30"></textarea required>
-                    </div>
-
+                    
                 </div>
     
                 <div class="row">
                   <div class="col-12">
                     <div class="form-group">
-                      <input type="submit" value="Guardar" id="boton1"/>
-                      <input type="reset" value="Cancelar" id="boton2"/>
+                      <input type="submit" value="Moificar Informacion" id="boton"/>
+                      
                     </div>
                   </div>
                 </div>
@@ -132,7 +118,7 @@
         </div>
         <div class="outer-wrapper">
         <div class="table-wrapper">
-          <h1 class="logo">Multas</h1>
+          <h1 class="logo">Inquilinos Asociados</h1>
           <table>
             <thead>
               <tr>
@@ -140,12 +126,15 @@
                 <th class="col-md-4">Torre o Interior</th>
                 <th class="col-md-4">N° Apartamento</th>
                 <th class="col-md-4">Documento</th>
+                <th class="col-md-4">Fecha Expedición</th>
                 <th class="col-md-4">Nombres</th>
                 <th class="col-md-4">Apellidos</th>
+                <th class="col-md-4">Fecha Nacimiento</th>
                 <th class="col-md-4">Correo Eléctrónico</th>
                 <th class="col-md-4">Celular</th>
                 <th class="col-md-4">Teléfono Fijo</th>
-                 <th class="col-md-4">Infracción</th>
+                <th class="col-md-4">Sexo</th>
+                <th class="col-md-4">Agregar Arrendaratarios</th>
                 <th class="col-md-4">Modificar</th>
                 <th class="col-md-4">Eliminar</th>
               </tr>
@@ -156,12 +145,15 @@
                 <td class="col-md-4">Interior</td>
                 <td class="col-md-4">Apartamento</td>
                 <td class="col-md-4">Documento</td>
+                <td class="col-md-4">Expedición</td>
                 <td class="col-md-4">Nombres</td>
                 <td class="col-md-4">Apellidos</td>
+                <td class="col-md-4">Nacimiento</td>
                 <td class="col-md-4">Correo Electrónico</td>
                 <td class="col-md-4">Celular</td>
                 <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Infracción</td>
+                <td class="col-md-4">Sexo</td>
+                <td class="col-md-4"><a href="renter-form.html">Ver</a></td>
                 <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
                 <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
@@ -170,12 +162,15 @@
                 <td class="col-md-4">Interior</td>
                 <td class="col-md-4">Apartamento</td>
                 <td class="col-md-4">Documento</td>
+                <td class="col-md-4">Expedición</td>
                 <td class="col-md-4">Nombres</td>
                 <td class="col-md-4">Apellidos</td>
+                <td class="col-md-4">Nacimiento</td>
                 <td class="col-md-4">Correo Electrónico</td>
                 <td class="col-md-4">Celular</td>
                 <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Infracción</td>
+                <td class="col-md-4">Sexo</td>
+                <td class="col-md-4"><a href="renter-form.html">Ver</a></td>
                 <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
                 <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
@@ -184,12 +179,15 @@
                 <td class="col-md-4">Interior</td>
                 <td class="col-md-4">Apartamento</td>
                 <td class="col-md-4">Documento</td>
+                <td class="col-md-4">Expedición</td>
                 <td class="col-md-4">Nombres</td>
                 <td class="col-md-4">Apellidos</td>
+                <td class="col-md-4">Nacimiento</td>
                 <td class="col-md-4">Correo Electrónico</td>
                 <td class="col-md-4">Celular</td>
                 <td class="col-md-4">Teléfono</td>
-                <td class="col-md-4">Infracción</td>
+                <td class="col-md-4">Sexo</td>
+                <td class="col-md-4"><a href="renter-form.html">Ver</a></td>
                 <td class="col-md-4"><input type="submit" value="Modificar" id="boton4"/></td>
                 <td class="col-md-4"><input type="reset" value="Eliminar" id="boton5"/></td>
               </tr>
