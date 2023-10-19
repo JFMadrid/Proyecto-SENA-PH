@@ -38,7 +38,7 @@ header.cabeza {
 	height: 3.5em;
 	opacity: 1;
 	position: fixed;
-	
+	z-index: 10;
 }
 
 div#header.cabeza{
@@ -119,11 +119,11 @@ main .container {
 	max-width: 900px;
 	margin: 0 auto;
 	text-align: center;
-	justify-content: left;
+	justify-content: center;
 }
 
 main .content {
-	max-width: 40em;
+	max-width: 50em;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
@@ -131,89 +131,12 @@ main .content {
 	text-align: center;
 }
 
-main#main-index {
-	width: 300px;
-	margin:auto;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
+h6 {
+	margin: 20px 30px;
+	font-size:small;
+	font-weight: bold;
 }
 
-.login-form {
-	background: #f1f4f2;
-	border-radius: 10px;
-	text-align: center;
- 
-}
-
-.container-index {
-	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	justify-content: center;
-}
-
-.gestion-menu {
-	background-color: #fff;
-	padding: 20px;
-	justify-content: left;
-}
-
-.gestion-menu .content {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-}
-
-gestion-menu .contact-wrapper {
-	display:block;
-}
-
-.gestion-menu .form-group {
-	margin-bottom: 20px;
-}
-
-.gestion-menu .button {
-	width: 200px;
-	height: 50px;
-	border-radius: 5% 5% 50% 50%;
-	box-shadow: 0.3em 0.3em 0.4em #043555;
-	border: 0;
-	background-color: #2f4f4f;
-	text-overflow: clip;
-	color: #ffffff;
-	padding: 10px;
-	text-align: center;
-	margin: 10px;
-}
-
-.gestion-menu .button:hover {
-	
-	background-color: #0d6efd;
-	color: #ffffff;
-	transition: width 0.5s;
-}
-
-.gestion-menu .button a {
-	text-decoration: none;
-	color: #FFFFFF;
-	position: center;
-	top: 50%;
-	left: 50%;
-	
-	width: 100%;
-	height: 100%;
-	align-content: center;
-}
-
-.gestion-menu .button:hover a {
-	display:grid;
-	text-decoration: none;
-}
-
-  
 .logo {
 	font-size: 24px;
 	margin-top: 1em;
@@ -223,7 +146,7 @@ gestion-menu .contact-wrapper {
   }
 
 
-  .contact-wrapper {
+.contact-wrapper {
 	box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.8);
 	background: white;
 	border-radius: 0.4em;
@@ -259,7 +182,14 @@ gestion-menu .contact-wrapper {
 
   label {
 	font-weight: bold;
+	vertical-align: top;
   }
+
+
+  button.btn.btn-primary {
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+	background: #0d6efd;
+}
 
 input#boton1 {
 	width: 6em;
@@ -346,11 +276,84 @@ input#boton6 {
 	padding: 0.5em 1em;
 }
 
+input#boton7 {
+	width: 12em;
+	padding: 0.5em 1em;
+	color:white;
+	font-size: 1em;
+	background-color: #5dade2;
+	border: 0;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+	transition:background-color 0.45s;
+}
+
+input#boton7:hover {
+	background-color: rgb(20, 171, 68);
+}
+
+.gestion-menu .content {
+	max-width: 400px;
+	min-width: 100%;
+	margin: 0 auto;
+}
+
+.gestion-menu .button {
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+	border: 0;
+	background-color: #9fe2bf;
+	text-overflow: clip;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+}
+
+.gestion-menu .button:hover {
+	
+	background-color: #0d6efd;
+	transition: width 0.5s;
+}
+
+.gestion-menu .button a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	position: center;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+}
+
+.gestion-menu .button:hover a {
+	display:grid;
+	text-decoration: none;
+	color: #fff;
+}
+
+.login-form a {
+	text-decoration: none;
+	border-radius: 20px;
+	color: #000;
+}
+
+.login-form a:hover {
+	background: #0d6efd;
+	color: #fff;
+}
+
 .container-confirm {
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
 
+.announcements-info,
+.announcements-form,
+.login-form,
 .reservation-janitor-form,
 .income-form,
 .gestion-menu,
@@ -380,6 +383,24 @@ input#boton6 {
 }
 
 .renter-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.announcements-form .contact-form form input{
+	width: 90%;
+	padding: 0.4em;
+	border: none;
+	background: none;
+	outline: 0;
+	border-bottom: 0.06em solid #d63031;
+}
+
+.announcements-info .contact-form form input{
 	width: 90%;
 	padding: 0.4em;
 	border: none;
@@ -424,15 +445,6 @@ input#boton6 {
 	border-bottom: 0.06em solid #d63031;
 }
 
-.reservation-janitor-form .contact-form form input{
-	width: 90%;
-	padding: 0.4em;
-	border: none;
-	background: none;
-	outline: 0;
-	border-bottom: 0.06em solid #d63031;
-}
-
 .statement-form .contact-form form input{
 	width: 90%;
 	padding: 0.4em;
@@ -452,6 +464,24 @@ input#boton6 {
 }
 
 .renter-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.announcements-form .contact-form form select {
+	width: 90%;
+	padding: 0.4em;
+	font-size: 0.87em;
+	background: none;
+	outline: 0;
+	border-radius: 0.6em;
+}
+
+.announcements-info .contact-form form select {
 	width: 90%;
 	padding: 0.4em;
 	font-size: 0.87em;
@@ -505,6 +535,14 @@ input#boton6 {
 	border-radius: 0.6em;
 }
 
+.login-form input {
+	border-radius: 3em;
+	border: none;
+	outline: none;
+	background-color: #a9a9a9;
+}
+
+
 .search-button input {
 		padding: 0.6em;
 		border-radius: 0.6em;
@@ -542,9 +580,9 @@ input#file {
 textarea {
 	border: 0.12em solid black;
 	resize: none;
-	width: 90%;
+	width: 80%;
 	border-radius: 0.6em;
-	resize: none;
+	
 }
 
 
@@ -621,6 +659,35 @@ td.col-md-4 {
 	box-shadow: 0.3em 0.3em 0.4em #043555;
 }
 
+.documents-form .table-wrapper a {
+	width: 6em;
+	padding: 0.5em 1em;
+	margin: 1.2em;
+	color:white;
+	font-size: 1em;
+	background-color: #5dade2;
+	border: 0;
+	text-decoration: none;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.4em #043555;
+}
+
+.img-fluid {
+	width: 50%;
+}
+
+.card-body {
+	padding: 20px 20px;
+}
+
+.card {
+	
+	margin-bottom: 30px;
+}
+
+.card-title {
+	font-weight: bolder;
+}
 
 footer.menu-footer{
     position: fixed;
