@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingresos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@500&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.google.com/">
 </head>
@@ -18,21 +20,28 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container px-4">
         <img src="../img/Logo_PH.png" id="img-logo">
-          <a class="navbar-brand" href="../index.html" id="logo">CONJUNTO RESIDENCIAL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#admin"><img src="../img/admin.png" id="img-icono3">Conserje</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><img src="../img/Contacto.png" id="img-icono1">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link" href="#help"><img src="../img/Ayuda.png" id="img-icono2">Ayuda</a></li>
-                <li class="nav-item"><a class="nav-link" href="../janitor/announcements-info.html"><img src="../img/Notificaciones.png" id="img-icono3">Cartelera</a></li>
-                <li class="nav-item"><a class="nav-link" href="#cerrar_sesion"><img src="../img/cerrar_sesion.png" id="img-icono3">Cerrar Sesión</a></li>
-              </ul>
-          </div>
+        <a class="navbar-brand" href="../index.html" id="logo">CONJUNTO RESIDENCIAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#admin"><img src="../img/admin.png"
+                  id="img-icono3">Conserje</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><img src="../img/Contacto.png"
+                  id="img-icono1">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#help"><img src="../img/Ayuda.png" id="img-icono2">Ayuda</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../janitor/announcements-info.html"><img
+                  src="../img/Notificaciones.png" id="img-icono3">Cartelera</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cerrar_sesion"><img src="../img/cerrar_sesion.png"
+                  id="img-icono3">Cerrar Sesión</a></li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
   </header>
-  
+
   <main>
     <div class="container">
       <div class="income-form">
@@ -42,65 +51,67 @@
             <div class="contact-form">
               <form action="">
                 <div class="row">
-                  
-                    <div class="form-group col-md-6">
-                      <label for="apartamento">N° Apartamento</label>
-                      <input type="text" name="apartamento" id="apartamento" class="form-control" required>
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                      <label for="torre-interior">Torre o Interior</label>
-                      <input type="text" name="Torre-interior" id="torre-interior" class="form-control" required>
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                      <label for="nombres-visitante">Nombres Visitante</label>
-                      <input type="text" name="nombres-arrendaratio" id="nombres-arrendaratio" class="form-control" required>
-                    </div>
-                  
-                    <div class="form-group col-md-6">
-                      <label for="apellidos-visitante">Apellidos Visitante</label>
-                      <input type="text" name="apellidos-arrendaratio" id="apellidos-arrendaratio" class="form-control" required>
-                    </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="celular">Celular</label>
-                      <input type="tel" name="number" id="celular" class="form-control" required>
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                      <label>Tipo Visita</label>
-                      <select name="tipo" required>
-                        <option value="Seleccione">Seleccione</option>
-                        <option value="familiar">Familiar</option>
-                        <option value="entrega">Entrega</option>
-                        <option value="otro">Otro</option>
-                      </select>
-                    </div>
+                  <div class="form-group col-md-6">
+                    <label for="apartamento">N° Apartamento</label>
+                    <input type="text" name="apartamento" id="apartamento" class="form-control" required>
+                  </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="fecha-ingreso">Fecha Ingreso</label>
-                      <input type="date" name="fecha-ingreso" id="fecha-ingreso" class="form-control" required>
-                    </div>
+                  <div class="form-group col-md-6">
+                    <label for="torre-interior">Torre o Interior</label>
+                    <input type="text" name="Torre-interior" id="torre-interior" class="form-control" required>
+                  </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="hora-ingreso">Hora Ingreso</label>
+                  <div class="form-group col-md-6">
+                    <label for="nombres-visitante">Nombres Visitante</label>
+                    <input type="text" name="nombres-arrendaratio" id="nombres-arrendaratio" class="form-control"
+                      required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="apellidos-visitante">Apellidos Visitante</label>
+                    <input type="text" name="apellidos-arrendaratio" id="apellidos-arrendaratio" class="form-control"
+                      required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="celular">Celular</label>
+                    <input type="tel" name="number" id="celular" class="form-control" required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label>Tipo Visita</label>
+                    <select name="tipo" required>
+                      <option value="Seleccione">Seleccione</option>
+                      <option value="familiar">Familiar</option>
+                      <option value="entrega">Entrega</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="fecha-ingreso">Fecha Ingreso</label>
+                    <input type="date" name="fecha-ingreso" id="fecha-ingreso" class="form-control" required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="hora-ingreso">Hora Ingreso</label>
                     <input type="time" name="hora-ingreso" id="hora-ingreso" class="form-control" required>
-                    </div>
+                  </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="fecha-ingreso">Fecha Salida</label>
-                      <input type="date" name="fecha-ingreso" id="fecha-ingreso" class="form-control" required>
-                    </div>
+                  <div class="form-group col-md-6">
+                    <label for="fecha-ingreso">Fecha Salida</label>
+                    <input type="date" name="fecha-ingreso" id="fecha-ingreso" class="form-control" required>
+                  </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="hora-ingreso">Hora Salida</label>
+                  <div class="form-group col-md-6">
+                    <label for="hora-ingreso">Hora Salida</label>
                     <input type="time" name="hora-ingreso" id="hora-ingreso" class="form-control" required>
-                    </div>
+                  </div>
 
-                    <div class="form-group col-md-12">
-                      <label>Novedad</label>
-                      <textarea rows="3" cols="30"></textarea required>
+                  <div class="form-group col-md-12">
+                    <label>Novedad</label>
+                    <textarea rows="3" cols="30"></textarea required>
                     </div>
                 </div>
     
@@ -214,7 +225,7 @@
                 <li><a class="dropdown-item" href="../admin/penalties-form.html">Generar Multas</a></li>
                 <li><a class="dropdown-item" href="../admin/reservation-form.html">Reservaciones</a></li>
                 <li><a class="dropdown-item" href="../admin/documents-form.html">Ingresar Documentación</a></li>
-                <li><a class="dropdown-item" href="../admin/statement-form.html">Estados de Cuenta</a></li>
+                <li><a class="dropdown-item" href="../admin/payment-history.html">Historial de Pagos</a></li>
                 <li><a class="dropdown-item" href="../admin/announcements-form.html">Cartelera de Información</a></li>
               </ul>
             </li>
@@ -224,6 +235,7 @@
                 <li><a class="dropdown-item" href="../owner/information-form.html">Ver Información</a></li>
                 <li><a class="dropdown-item" href="../owner/documents-info.html">Ver Documentación</a></li>
                 <li><a class="dropdown-item" href="../owner/payment-history.html">Historial de Pagos</a></li>
+                <li><a class="dropdown-item" href="../owner/invoice-info.html">Facturas Por Pagar</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

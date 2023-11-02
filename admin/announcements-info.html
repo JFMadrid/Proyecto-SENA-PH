@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo Conserje</title>
+  <title>Anuncios</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
@@ -26,13 +26,13 @@
             class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#admin"><img src="../img/admin.png"
-                  id="img-icono3">Conserje</a></li>
+            <li class="nav-item"><a class="nav-link" href="#admin"><img src="../img/admin.png" id="img-icono3">Admin</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#contact"><img src="../img/Contacto.png"
                   id="img-icono1">Contacto</a></li>
             <li class="nav-item"><a class="nav-link" href="#help"><img src="../img/Ayuda.png" id="img-icono2">Ayuda</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="../janitor/announcements-info.html"><img
+            <li class="nav-item"><a class="nav-link" href="../admin/announcements-info.html"><img
                   src="../img/Notificaciones.png" id="img-icono3">Cartelera</a></li>
             <li class="nav-item"><a class="nav-link" href="#cerrar_sesion"><img src="../img/cerrar_sesion.png"
                   id="img-icono3">Cerrar Sesión</a></li>
@@ -43,36 +43,93 @@
   </header>
 
   <main>
-
-
-    <div class="container-index">
-      <div class="gestion-menu">
+    <div class="container">
+      <div class="announcements-info">
         <div class="content">
-          <h1 class="logo" id="logo">Modulo Conserje</h1>
+          <h1 class="logo" id="logo">Anuncios</h1>
           <div class="contact-wrapper">
             <div class="contact-form">
               <form action="">
                 <div class="row">
 
-                  <div class="button form-group col-md-6">
-                    <a href="../janitor/income-form.html">Ingresos</a>
+                  <div class="card col-md-6">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="../img/perros-sin-correa.jpg" class="img-fluid" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Perros sin Correa y/o bozal</h5>
+                      <p class="card-text">
+                        Señores guardas de seguridad; están autorizados para imponer
+                        llamado de atención a aquellos dueños de mascota que transiten
+                        con sus mascotas sin ellas tener correa y/o bozal segun lo estipulado en la ley y manual de
+                        Convivencia.
+                      </p>
+                    </div>
+                    <div class="card-footer">Enviado por: Administración</div>
+                    <div class="card-footer">Fecha: 15 Octubre 2023</div>
                   </div>
 
-                  <div class="button form-group col-md-6">
-                    <a href="../janitor/reservation-form.html">Reservaciones</a>
+                  <div class="card col-md-6">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="../img/corte-agua.jpg" class="img-fluid" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Corte Servicio de Agua</h5>
+                      <p class="card-text">
+                        A partir de este momento y por 24 horas no habrá servicio de agua; por favor recolectar la
+                        necesaria para evitar escasez.
+                      </p>
+                    </div>
+                    <div class="card-footer">Enviado por: Administración</div>
+                    <div class="card-footer">Fecha: 18 Octubre 2023</div>
                   </div>
 
-              </form>
+                  <div class="card col-md-6">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="../img/anuncio.jpg" class="img-fluid" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Sin Administración el Sábado</h5>
+                      <p class="card-text">
+                        Se informa que el próximo sabado no hay servicio de Administración; se retoman labores el lunes.
+                      </p>
+                    </div>
+                    <div class="card-footer">Enviado por: Administración</div>
+                    <div class="card-footer">Fecha: 18 Octubre 2023</div>
+                  </div>
+
+                  <div class="card col-md-6">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="../img/prohibido-celular.jpg" class="img-fluid" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Prohibido hablar por Celular</h5>
+                      <p class="card-text">
+                        Se les recuerda a los guardas que está totalmente prohibido hablar por celular durante el turno.
+                      </p>
+                    </div>
+                    <div class="card-footer">Enviado por: Concejo</div>
+                    <div class="card-footer">Fecha: 18 Octubre 2023</div>
+                  </div>
+
+                </div>
+
             </div>
+            </form>
           </div>
         </div>
       </div>
+
+
     </div>
 
 
-
-
   </main>
+
 
   <footer class="menu-footer">
     <nav class="navbar navbar-expand-md navbar-dark fixed-bottom dropup">
@@ -82,10 +139,10 @@
           onclick='updatemenu()'><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" class="container-fluid mx-auto">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-            <li class="nav-item"><a class="nav-link active" aria-current="" href="../index/index-janitor.html">Inicio
+            <li class="nav-item"><a class="nav-link active" aria-current="" href="../index/index-admin.html">Inicio
                 Modulo</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Administración</a>
               <ul class="dropdown-menu text-center">
                 <li><a class="dropdown-item" href="../admin/registration-form.html">Registro Propietarios</a></li>
@@ -98,13 +155,13 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Propietarios</a>
               <ul class="dropdown-menu text-center">
-                <li><a class="dropdown-item" href="../owner/information-form.html">Ver Información</a></li>
-                <li><a class="dropdown-item" href="../owner/documents-info.html">Ver Documentación</a></li>
-                <li><a class="dropdown-item" href="../owner/payment-history.html">Historial de Pagos</a></li>
-                <li><a class="dropdown-item" href="../owner/invoice-info.html">Facturas Por Pagar</a></li>
+                <li><a class="dropdown-item" href="#">Generar Mes Actual</a></li>
+                <li><a class="dropdown-item" href="../admin/defaulters-list.html">Listado Propietarios en Mora</a></li>
+                <li><a class="dropdown-item" href="../admin/always-paid-list.html">Listado Propietarios al Día</a></li>
+                <li><a class="dropdown-item" href="../admin/general-list.html">Listado General</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -112,7 +169,7 @@
                 aria-expanded="false">Conserje</a>
               <ul class="dropdown-menu text-center">
                 <li><a class="dropdown-item" href="../janitor/income-form.html">Ingresos</a></li>
-                <li><a class="dropdown-item" href="../janitor/reservation-form.html">Reservaciones</a></li>
+                <li><a class="dropdown-item" href="../janitor/reservation-form.html">Reservacion Zona Social</a></li>
               </ul>
             </li>
           </ul>

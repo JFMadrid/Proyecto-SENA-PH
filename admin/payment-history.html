@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartelera</title>
+  <title>Historial de Pagos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet" />
@@ -50,44 +50,67 @@
 
   <main>
     <div class="container">
-      <div class="announcements-form">
+      <div class="statement-form">
         <div class="content">
-          <h1 class="logo" id="logo">Crear Anuncio</h1>
+          <h1 class="logo" id="logo">Historial de Pagos</h1>
           <div class="contact-wrapper">
             <div class="contact-form">
               <form action="">
                 <div class="row">
-                  <div class="form-group col-md-12">
-                    <label>Mensaje</label>
-                    <textarea rows="3" cols="30" class="text" required></textarea>
+                  <div class="form-group col-md-6">
+                    <label for="apartamento">N° Apartamento</label>
+                    <input type="text" name="apartamento" id="apartamento" class="form-control" required />
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label>Agregar Imagen</label>
+                    <label for="torre-interior">Torre o Interior</label>
+                    <input type="text" name="Torre-interior" id="torre-interior" class="form-control" required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="nombres-propietario">Nombres</label>
+                    <input type="text" name="nombres-propietario" id="nombres-propietario" class="form-control"
+                      required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="apellidos-propietario">Apellidos</label>
+                    <input type="text" name="apellidos-propietario" id="apellidos-propietario" class="form-control"
+                      required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="n-documento">Documento</label>
+                    <input type="number" name="n-documento" id="n-documento" class="form-control" required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="fecha-pago">Fecha Pago</label>
+                    <input type="date" name="fecha-pago" id="fecha-pago" class="form-control" required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="ref-pago">Referencia Pago</label>
+                    <input type="text" name="ref-pago" id="ref-pago" class="form-control" required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label>Evidencia</label>
                     <input type="file" name="file" id="file" required />
                   </div>
 
-                  <div class="form-group col-md-6">
-                    <label for="publicacion">Fecha Publicación</label>
-                    <input type="date" name="fecha-publicacion" id="fecha-publicacion" class="form-control" required />
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label>Enviar a</label>
-                    <select name="enviado" required>
-                      <option value="Seleccione">Seleccione</option>
-                      <option value="todos">Todos</option>
-                      <option value="Propietarios">Propietarios</option>
-                      <option value="Conserje">Conserje</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <input type="submit" value="Guardar" id="boton1" />
-                      <input type="reset" value="Cancelar" id="boton2" />
+                  <div class="container-confirm">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5>Al Día</h5>
+                        <a href="#" class="btn btn-success"
+                          data-confirm="¿Está seguro de que desea confirmar la cartera al día?">Confirmar</a>
+                      </div>
+                      <div class="col-md-6">
+                        <h5>Moroso</h5>
+                        <a href="#" class="btn btn-danger"
+                          data-confirm="¿Está seguro de que desea confirmar la cartera morosa?">Confirmar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -97,15 +120,15 @@
         </div>
         <div class="outer-wrapper">
           <div class="table-wrapper">
-            <h1 class="logo">Anuncios</h1>
+            <h1 class="logo">Estados de Cuenta</h1>
             <table>
               <thead>
                 <tr>
                   <th class="col-md-4">ID</th>
-                  <th class="col-md-4">Mensaje</th>
-                  <th class="col-md-4">Imagen</th>
-                  <th class="col-md-4">Fecha Publicación</th>
-                  <th class="col-md-4">Enviado a</th>
+                  <th class="col-md-4">Torre o Interior</th>
+                  <th class="col-md-4">N° Apartamento</th>
+                  <th class="col-md-4">Estado</th>
+                  <th class="col-md-4">Aprobado</th>
                   <th class="col-md-4">Modificar</th>
                   <th class="col-md-4">Eliminar</th>
                 </tr>
@@ -113,10 +136,12 @@
               <tbody>
                 <tr>
                   <td class="col-md-4">1</td>
-                  <td class="col-md-4">Mensaje</td>
-                  <td class="col-md-4">Imagen</td>
-                  <td class="col-md-4">Fecha Publicación</td>
-                  <td class="col-md-4">Todos</td>
+                  <td class="col-md-4">Interior</td>
+                  <td class="col-md-4">Apartamento</td>
+                  <td class="col-md-4">Moroso</td>
+                  <td class="col-md-4">
+                    <input type="checkbox" id="boton6" />
+                  </td>
                   <td class="col-md-4">
                     <input type="submit" value="Modificar" id="boton4" />
                   </td>
@@ -126,10 +151,12 @@
                 </tr>
                 <tr>
                   <td class="col-md-4">2</td>
-                  <td class="col-md-4">Mensaje</td>
-                  <td class="col-md-4">Imagen</td>
-                  <td class="col-md-4">Fecha Publicación</td>
-                  <td class="col-md-4">Propietarios</td>
+                  <td class="col-md-4">Interior</td>
+                  <td class="col-md-4">Apartamento</td>
+                  <td class="col-md-4">Al día</td>
+                  <td class="col-md-4">
+                    <input type="checkbox" id="boton6" />
+                  </td>
                   <td class="col-md-4">
                     <input type="submit" value="Modificar" id="boton4" />
                   </td>
@@ -139,10 +166,12 @@
                 </tr>
                 <tr>
                   <td class="col-md-4">3</td>
-                  <td class="col-md-4">Mensaje</td>
-                  <td class="col-md-4">Imagen</td>
-                  <td class="col-md-4">Fecha Publicación</td>
-                  <td class="col-md-4">Conserje</td>
+                  <td class="col-md-4">Interior</td>
+                  <td class="col-md-4">Apartamento</td>
+                  <td class="col-md-4">Moroso</td>
+                  <td class="col-md-4">
+                    <input type="checkbox" id="boton6" />
+                  </td>
                   <td class="col-md-4">
                     <input type="submit" value="Modificar" id="boton4" />
                   </td>
